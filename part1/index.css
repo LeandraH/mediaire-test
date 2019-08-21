@@ -1,0 +1,65 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+}
+
+.header {
+  /* width: 1920px; */
+  height: 111px;
+  background-image: linear-gradient(to bottom, #4c61fc, #4153d5);
+  display: grid;
+  align-items: center;
+  grid-column-gap: 2%;
+}
+
+.header .back-button {
+  grid-column: 1;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.header h2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.header button {
+  width: 135px;
+  height: 32px;
+  border-radius: 20.7px;
+  border: solid 0.9px #ffffff;
+}
+
+.header .view-button {
+  grid-column: 5;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.header .send-to-pacs {
+  grid-column: 6;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.header .save {
+  grid-column: 7;
+  color: #324afd;
+  background-color: #ffffff;
+}
+
+.header .created-at {
+  grid-column: 8;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.segmentations-picture {
+  width: 595px;
+  height: 350px;
+  border-radius: 7px;
+  background-color: #000000;
+}
