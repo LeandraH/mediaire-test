@@ -57,11 +57,8 @@ body {
   font-weight: 300;
 }
 
-.segmentations-picture {
-  width: 595px;
-  height: 350px;
-  border-radius: 7px;
-  background-color: #000000;
+.content {
+  margin-left: 5%;
 }
 
 .overview table {
@@ -69,7 +66,6 @@ body {
   width: 90%;
   border-radius: 14px;
   background-color: #f6f7f9;
-  margin-left: auto;
   margin-top: 10px;
 }
 
@@ -87,4 +83,88 @@ body {
   opacity: 0.8;
   font-size: 20px;
   letter-spacing: 0.42px;
+}
+
+.details {
+  display: grid;
+}
+
+.details .segmentation {
+  grid-column: 1;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1.61px;
+  color: #424242;
+}
+
+.details .segmentations-picture {
+  width: 595px;
+  height: 350px;
+  border-radius: 7px;
+  background-color: #000000;
+}
+
+.details .segmentation .open-new-window {
+  width: 52px;
+  height: 55px;
+  border-radius: 17px;
+  box-shadow: 0 3px 6px 0 #2c5294;
+  background-image: linear-gradient(159deg, #4c61fc, #4153d5);
+  position: absolute;
+  margin-left: 600px;
+}
+
+.details .quality {
+  grid-column: 2;
+}
+
+.details .quality h4 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1.51px;
+  color: #424242;
+}
+
+.details .quality table {
+  text-align: left;
+}
+
+.details .quality th {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: 13px;
+  letter-spacing: 2.07px;
+}
+
+.details .quality td {
+  opacity: 0.8;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+}
+
+.details .lesions-details {
+  grid-column: 1;
+}
+
+.details .lesions-details table {
+  text-align: left;
+}
+
+.details .lesions-details h4 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1.51px;
+  color: #424242;
+}
+
+.details .lesions-details th {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  opacity: 0.8;
+}
+
+.details .lesions-details td {
+  opacity: 0.8;
+  font-size: 15.4px;
 }
