@@ -23,3 +23,9 @@ const grayScale = () => {
   imageDisplay.style.filter = 'grayscale(100%)';
   imageDisplay.style.WebkitFilter = 'grayscale(100 %)';
 };
+
+const reset = () => {
+  imageDisplay.src = uneditedImage;
+  imageDisplay.style.filter = '';
+  imageDisplay.style.WebkitFilter = '';
+}
