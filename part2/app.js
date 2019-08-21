@@ -2,7 +2,7 @@ let uneditedImage;
 let imageDisplay;
 window.onload = () => {
   imageDisplay = document.getElementById('image');
-}
+};
 
 const showPicture = () => {
   let file = document.getElementById('image-file').files[0];
@@ -28,16 +28,18 @@ const grayScale = () => {
 
 const adjustBrightness = (val) => {
   imageDisplay.style.filter += ` brightness(${val})`;
-}
+};
 
 const adjustContrast = (val) => {
   imageDisplay.style.filter += ` contrast(${val})`;
-}
+};
 
-
+const adjustRotation = (val) => {
+  imageDisplay.style.transform = `rotate(${val}deg)`;
+};
 
 const reset = () => {
-  imageDisplay.src = uneditedImage;
   imageDisplay.style.filter = '';
   imageDisplay.style.WebkitFilter = '';
-}
+  imageDisplay.style.transform = '';
+};
