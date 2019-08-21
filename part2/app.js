@@ -24,6 +24,10 @@ const grayScale = () => {
   imageDisplay.style.WebkitFilter = 'grayscale(100 %)';
 };
 
+const correctBrightness = (val) => {
+  imageDisplay.style.filter = `brightness(${val})`;
+}
+
 const reset = () => {
   imageDisplay.src = uneditedImage;
   imageDisplay.style.filter = '';
