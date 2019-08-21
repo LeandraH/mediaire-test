@@ -26,13 +26,15 @@ const grayScale = () => {
   }
 };
 
-const correctBrightness = (val) => {
+const adjustBrightness = (val) => {
   imageDisplay.style.filter += ` brightness(${val})`;
 }
 
-const correctContrast = (val) => {
+const adjustContrast = (val) => {
   imageDisplay.style.filter += ` contrast(${val})`;
 }
+
+
 
 const reset = () => {
   imageDisplay.src = uneditedImage;
