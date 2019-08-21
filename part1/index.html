@@ -4,6 +4,95 @@
     <title>Lesion Analysis</title>
   </head>
   <body>
-    Things will go here
+    <div class="header">
+      <button class="back-button">back</button>
+      <h2>Lesion Analysis</h2>
+      <button class="view-button">View PDF</button>
+      <button class="send-to-pacs">Send to PACS</button>
+      <button class="save">Save Changes</button>
+      <div class="created-at">Erstellt am: <bold>04.05.2019</bold> 09:12:55</div>
+    </div>
+    <div class="content">
+      <div class="overview">
+        <table>
+          <tr>
+            <th>Entry #</th>
+            <th>Patienten ID</th>
+            <th>Name</th>
+            <th>Geschlecht</th>
+            <th>Geburtsdatum</th>
+            <th>Sequenz(en)</th>
+            <th>Untersuchungsdatum</th>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>003_S_6264</td>
+            <td>Max Mustermann</td>
+            <td>M</td>
+            <td>08.06.1956 (65J)</td>
+            <td>t2_flair_iso_p2 (T2)</td>
+            <td>04.06.2018</td>
+          </tr>
+        </table>
+      </div>
+      <div class="segmentation">
+        <h4>Segmentation Viewer</h4>
+        <img src="screenshot-lesions.png" class="segmentations-picture" />
+        <button class="open-new-window">Open</button>
+      </div>
+      <div class="quality">
+        <h4>Quality Control</h4>
+        <table>
+          <tr>
+            <th>Image Quality</th>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <th>Notes</th>
+            <td>None</td>
+          </tr>
+        </table>
+      </div>
+      <div class="lesions-details">
+        <h4>L&auml;sionsdetails</h4>
+        <table>
+          <tr>
+            <th>Region</th>
+            <th>L&auml;sionsvolumen [ml]</th>
+            <th>Anzahl L&auml;sionen</th>
+          </tr>
+          <tr>
+            <th>Periventrikul&auml;r</th>
+            <td>0,14</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Juxtakortikal</th>
+            <td>0,53</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Infratentoriell</th>
+            <td>1,80</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>&Uuml;briges Marklager</th>
+            <td>0,30</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Gesamt</th>
+            <td>2,77</td>
+            <td>13</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Disclaimer goes here. mediaire footer. etc
+      </p>
+    </div>
   </body>
 </html>
