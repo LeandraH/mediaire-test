@@ -30,6 +30,10 @@ const correctBrightness = (val) => {
   imageDisplay.style.filter += ` brightness(${val})`;
 }
 
+const correctContrast = (val) => {
+  imageDisplay.style.filter += ` contrast(${val})`;
+}
+
 const reset = () => {
   imageDisplay.src = uneditedImage;
   imageDisplay.style.filter = '';
