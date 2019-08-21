@@ -20,12 +20,14 @@ const showPicture = () => {
 };
 
 const grayScale = () => {
-  imageDisplay.style.filter = 'grayscale(100%)';
-  imageDisplay.style.WebkitFilter = 'grayscale(100 %)';
+  if (!imageDisplay.style.filter.includes('grayscale')) {
+    imageDisplay.style.filter += ' grayscale(100%)';
+    imageDisplay.style.WebkitFilter = 'grayscale(100 %)';
+  }
 };
 
 const correctBrightness = (val) => {
-  imageDisplay.style.filter = `brightness(${val})`;
+  imageDisplay.style.filter += ` brightness(${val})`;
 }
 
 const reset = () => {
