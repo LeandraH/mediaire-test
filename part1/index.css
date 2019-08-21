@@ -63,3 +63,28 @@ body {
   border-radius: 7px;
   background-color: #000000;
 }
+
+.overview table {
+  text-align: left;
+  width: 90%;
+  border-radius: 14px;
+  background-color: #f6f7f9;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.overview th {
+  color: #4153d5;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.overview td {
+  color: #2b2d36;
+  opacity: 0.8;
+  font-size: 20px;
+  letter-spacing: 0.42px;
+}
